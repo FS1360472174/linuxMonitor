@@ -1,0 +1,8 @@
+1.disk io速率可能是影响性能的关键
+dd if=/dev/zero of=./largefile bs=1M count=1024
+在需要测试的磁盘目录上运行此命令。
+
+2.vncviewer 在redhat7 lock住，无法unlock
+使用
+loginctl list-sessions //查看活动的打开页面
+loginctl unlock-session $sesssionid
